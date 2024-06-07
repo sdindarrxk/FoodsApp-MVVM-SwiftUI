@@ -18,6 +18,8 @@
 		35E9820B2C11E37B000E74B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9820A2C11E37B000E74B4 /* DetailView.swift */; };
 		35E9820D2C11E38D000E74B4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */; };
 		35E982112C11E3AB000E74B4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E982102C11E3AB000E74B4 /* Food.swift */; };
+		35ED4D252C13AB9700A74655 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35ED4D242C13AB9700A74655 /* Alamofire */; };
+		35ED4D272C13ABEF00A74655 /* HomeViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		35E9820A2C11E37B000E74B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		35E982102C11E3AB000E74B4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelAlamofire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35ED4D252C13AB9700A74655 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +145,7 @@
 			children = (
 				35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */,
 				35212E502C13685200ED54F7 /* HomeViewModelURLSession.swift */,
+				35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +175,9 @@
 			dependencies = (
 			);
 			name = "FoodsApp-MVVM-SwiftUI";
+			packageProductDependencies = (
+				35ED4D242C13AB9700A74655 /* Alamofire */,
+			);
 			productName = "FoodsApp-MVVM-SwiftUI";
 			productReference = 35E981F42C11DFF5000E74B4 /* FoodsApp-MVVM-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +206,9 @@
 				Base,
 			);
 			mainGroup = 35E981EB2C11DFF5000E74B4;
+			packageReferences = (
+				35ED4D232C13AB9700A74655 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 35E981F52C11DFF5000E74B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35ED4D272C13ABEF00A74655 /* HomeViewModelAlamofire.swift in Sources */,
 				35E981FA2C11DFF5000E74B4 /* HomeView.swift in Sources */,
 				35212E572C136AB500ED54F7 /* FoodImage.swift in Sources */,
 				35212E512C13685200ED54F7 /* HomeViewModelURLSession.swift in Sources */,
@@ -440,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35ED4D232C13AB9700A74655 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35ED4D242C13AB9700A74655 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35ED4D232C13AB9700A74655 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35E981EC2C11DFF5000E74B4 /* Project object */;
 }

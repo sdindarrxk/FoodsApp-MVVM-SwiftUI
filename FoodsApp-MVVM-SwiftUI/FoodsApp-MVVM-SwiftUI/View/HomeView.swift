@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var viewModel = HomeViewModelURLSession()
+    @ObservedObject var viewModel = HomeViewModelAlamofire()
     
     init() {
         viewModel.loadFoods()
