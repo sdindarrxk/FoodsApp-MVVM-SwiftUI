@@ -11,7 +11,7 @@ class Food: Identifiable, Codable {
     var id: String?
     var name: String?
     var imageName: String?
-    var price: String?
+    var price: Int?
     
     enum CodingKeys: String, CodingKey {
         case id = "yemek_id"
@@ -24,7 +24,7 @@ class Food: Identifiable, Codable {
         
     }
     
-    init(id: String, name: String, imageName: String, price: String) {
+    init(id: String, name: String, imageName: String, price: Int) {
         self.id = id
         self.name = name
         self.imageName = imageName

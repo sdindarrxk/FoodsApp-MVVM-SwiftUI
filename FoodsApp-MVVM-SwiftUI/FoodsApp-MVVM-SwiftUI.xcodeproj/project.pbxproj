@@ -20,6 +20,9 @@
 		35E982112C11E3AB000E74B4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E982102C11E3AB000E74B4 /* Food.swift */; };
 		35ED4D252C13AB9700A74655 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35ED4D242C13AB9700A74655 /* Alamofire */; };
 		35ED4D272C13ABEF00A74655 /* HomeViewModelAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */; };
+		35ED4D292C13AE3000A74655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35ED4D282C13AE2F00A74655 /* GoogleService-Info.plist */; };
+		35ED4D2B2C13AE4900A74655 /* HomeViewModelFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ED4D2A2C13AE4900A74655 /* HomeViewModelFirebase.swift */; };
+		35ED4D2E2C13AED400A74655 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 35ED4D2D2C13AED400A74655 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,8 @@
 		35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		35E982102C11E3AB000E74B4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelAlamofire.swift; sourceTree = "<group>"; };
+		35ED4D282C13AE2F00A74655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		35ED4D2A2C13AE4900A74655 /* HomeViewModelFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelFirebase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35ED4D2E2C13AED400A74655 /* FirebaseDatabase in Frameworks */,
 				35ED4D252C13AB9700A74655 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,9 +103,9 @@
 				35E982052C11E263000E74B4 /* App */,
 				35E982072C11E278000E74B4 /* Model */,
 				35E982062C11E26E000E74B4 /* View */,
-				35212E552C136A9D00ED54F7 /* Subview */,
 				35E982082C11E27E000E74B4 /* ViewModel */,
 				35212E4F2C13680200ED54F7 /* Info.plist */,
+				35ED4D282C13AE2F00A74655 /* GoogleService-Info.plist */,
 				35E982092C11E29D000E74B4 /* Assets */,
 			);
 			path = "FoodsApp-MVVM-SwiftUI";
@@ -127,6 +133,7 @@
 				35E981F92C11DFF5000E74B4 /* HomeView.swift */,
 				35E9820A2C11E37B000E74B4 /* DetailView.swift */,
 				356657242C1331CB00315264 /* List */,
+				35212E552C136A9D00ED54F7 /* Subview */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 				35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */,
 				35212E502C13685200ED54F7 /* HomeViewModelURLSession.swift */,
 				35ED4D262C13ABEF00A74655 /* HomeViewModelAlamofire.swift */,
+				35ED4D2A2C13AE4900A74655 /* HomeViewModelFirebase.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 			name = "FoodsApp-MVVM-SwiftUI";
 			packageProductDependencies = (
 				35ED4D242C13AB9700A74655 /* Alamofire */,
+				35ED4D2D2C13AED400A74655 /* FirebaseDatabase */,
 			);
 			productName = "FoodsApp-MVVM-SwiftUI";
 			productReference = 35E981F42C11DFF5000E74B4 /* FoodsApp-MVVM-SwiftUI.app */;
@@ -208,6 +217,7 @@
 			mainGroup = 35E981EB2C11DFF5000E74B4;
 			packageReferences = (
 				35ED4D232C13AB9700A74655 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35ED4D2C2C13AED400A74655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 35E981F52C11DFF5000E74B4 /* Products */;
 			projectDirPath = "";
@@ -225,6 +235,7 @@
 			files = (
 				35E981FF2C11DFF7000E74B4 /* Preview Assets.xcassets in Resources */,
 				35E981FC2C11DFF7000E74B4 /* Assets.xcassets in Resources */,
+				35ED4D292C13AE3000A74655 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35ED4D272C13ABEF00A74655 /* HomeViewModelAlamofire.swift in Sources */,
+				35ED4D2B2C13AE4900A74655 /* HomeViewModelFirebase.swift in Sources */,
 				35E981FA2C11DFF5000E74B4 /* HomeView.swift in Sources */,
 				35212E572C136AB500ED54F7 /* FoodImage.swift in Sources */,
 				35212E512C13685200ED54F7 /* HomeViewModelURLSession.swift in Sources */,
@@ -462,6 +474,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		35ED4D2C2C13AED400A74655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -469,6 +489,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35ED4D232C13AB9700A74655 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		35ED4D2D2C13AED400A74655 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35ED4D2C2C13AED400A74655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

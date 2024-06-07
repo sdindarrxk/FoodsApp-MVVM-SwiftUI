@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var viewModel = HomeViewModelAlamofire()
+    @ObservedObject var viewModel = HomeViewModelFirebase()
     
     init() {
         viewModel.loadFoods()
