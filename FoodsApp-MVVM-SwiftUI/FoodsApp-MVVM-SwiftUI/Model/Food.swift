@@ -7,17 +7,24 @@
 
 import Foundation
 
-class Food: Identifiable {
-    var id: Int?
+class Food: Identifiable, Codable {
+    var id: String?
     var name: String?
     var imageName: String?
-    var price: Int?
+    var price: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "yemek_id"
+        case name = "yemek_adi"
+        case imageName = "yemek_resim_adi"
+        case price = "yemek_fiyat"
+    }
     
     init() {
         
     }
     
-    init(id: Int, name: String, imageName: String, price: Int) {
+    init(id: String, name: String, imageName: String, price: String) {
         self.id = id
         self.name = name
         self.imageName = imageName

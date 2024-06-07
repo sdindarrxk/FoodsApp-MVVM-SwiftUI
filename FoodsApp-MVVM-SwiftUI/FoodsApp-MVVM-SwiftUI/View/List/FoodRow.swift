@@ -12,8 +12,7 @@ struct FoodRow: View {
     
     var body: some View {
         HStack {
-            Image(food.imageName ?? .init())
-                .resizable()
+            FoodImage(imageName: food.imageName ?? .init())
                 .frame(width: 100, height: 100)
             VStack(alignment: .leading, spacing: 20) {
                 Text(food.name ?? .init())

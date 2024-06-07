@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35212E512C13685200ED54F7 /* HomeViewModelURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35212E502C13685200ED54F7 /* HomeViewModelURLSession.swift */; };
+		35212E542C1368B000ED54F7 /* FoodResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35212E532C1368B000ED54F7 /* FoodResponse.swift */; };
+		35212E572C136AB500ED54F7 /* FoodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35212E562C136AB500ED54F7 /* FoodImage.swift */; };
 		356657262C1331DF00315264 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356657252C1331DF00315264 /* FoodRow.swift */; };
 		35E981F82C11DFF5000E74B4 /* FoodsApp_MVVM_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E981F72C11DFF5000E74B4 /* FoodsApp_MVVM_SwiftUIApp.swift */; };
 		35E981FA2C11DFF5000E74B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E981F92C11DFF5000E74B4 /* HomeView.swift */; };
@@ -18,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35212E4F2C13680200ED54F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35212E502C13685200ED54F7 /* HomeViewModelURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelURLSession.swift; sourceTree = "<group>"; };
+		35212E532C1368B000ED54F7 /* FoodResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodResponse.swift; sourceTree = "<group>"; };
+		35212E562C136AB500ED54F7 /* FoodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodImage.swift; sourceTree = "<group>"; };
 		356657252C1331DF00315264 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		35E981F42C11DFF5000E74B4 /* FoodsApp-MVVM-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodsApp-MVVM-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E981F72C11DFF5000E74B4 /* FoodsApp_MVVM_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsApp_MVVM_SwiftUIApp.swift; sourceTree = "<group>"; };
@@ -40,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35212E522C13689E00ED54F7 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				35212E532C1368B000ED54F7 /* FoodResponse.swift */,
+			);
+			name = ResponseModel;
+			sourceTree = "<group>";
+		};
+		35212E552C136A9D00ED54F7 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				35212E562C136AB500ED54F7 /* FoodImage.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
 		356657242C1331CB00315264 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +93,9 @@
 				35E982052C11E263000E74B4 /* App */,
 				35E982072C11E278000E74B4 /* Model */,
 				35E982062C11E26E000E74B4 /* View */,
+				35212E552C136A9D00ED54F7 /* Subview */,
 				35E982082C11E27E000E74B4 /* ViewModel */,
+				35212E4F2C13680200ED54F7 /* Info.plist */,
 				35E982092C11E29D000E74B4 /* Assets */,
 			);
 			path = "FoodsApp-MVVM-SwiftUI";
@@ -106,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				35E982102C11E3AB000E74B4 /* Food.swift */,
+				35212E522C13689E00ED54F7 /* ResponseModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				35E9820C2C11E38D000E74B4 /* HomeViewModel.swift */,
+				35212E502C13685200ED54F7 /* HomeViewModelURLSession.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -198,8 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				35E981FA2C11DFF5000E74B4 /* HomeView.swift in Sources */,
+				35212E572C136AB500ED54F7 /* FoodImage.swift in Sources */,
+				35212E512C13685200ED54F7 /* HomeViewModelURLSession.swift in Sources */,
 				35E9820B2C11E37B000E74B4 /* DetailView.swift in Sources */,
 				35E981F82C11DFF5000E74B4 /* FoodsApp_MVVM_SwiftUIApp.swift in Sources */,
+				35212E542C1368B000ED54F7 /* FoodResponse.swift in Sources */,
 				356657262C1331DF00315264 /* FoodRow.swift in Sources */,
 				35E9820D2C11E38D000E74B4 /* HomeViewModel.swift in Sources */,
 				35E982112C11E3AB000E74B4 /* Food.swift in Sources */,
@@ -339,6 +369,7 @@
 				DEVELOPMENT_TEAM = 688BH99XNH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FoodsApp-MVVM-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,6 +399,7 @@
 				DEVELOPMENT_TEAM = 688BH99XNH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FoodsApp-MVVM-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -12,10 +12,9 @@ struct DetailView: View {
     
     var body: some View {
         VStack(spacing: 60) {
-            Image(food.imageName ?? .init())
-                .resizable()
+            FoodImage(imageName: food.imageName ?? .init())
                 .frame(width: 250, height: 250)
-
+            
             Text("\(food.price ?? .init()) ₺")
                 .font(.system(size: 60))
                 .foregroundColor(.red)
